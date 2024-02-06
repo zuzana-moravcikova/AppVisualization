@@ -288,7 +288,7 @@ def get_continents_population_pie_chart(year, mode):
         cd_map[highlight_continent] = 'darkred'
 
     fig = px.pie(data, values='Population', names='Continent',
-                 color='Continent', color_discrete_sequence=px.colors.sequential.Reds,
+                 color='Continent', color_discrete_sequence=px.colors.sequential.Greys, title='Continents Population',
                  hover_name='Continent', labels={'Population': 'Population'}, hover_data=['Density'])
 
     if highlight_continent is not None:
